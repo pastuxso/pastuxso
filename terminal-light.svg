@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280"
+     xml:space="preserve"
+     font-family="ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace"
+     font-size="14">
+  <style>
+    .fg { fill: #1a1a1a; }
+    .accent { fill: #d97706; }
+    .dim { fill: #6b7280; }
+  </style>
+
+  <!-- Terminal window frame -->
+  <rect x="10" y="10" width="620" height="260" rx="10" ry="10"
+        fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Welcome -->
+  <g class="fg">
+    <text x="40" y="55"><tspan class="accent">✻<animate attributeName="opacity" values="1;0.35;1" dur="2.5s" repeatCount="indefinite"/></tspan> Ruby on Rails Developer</text>
+    <text x="40" y="77" class="dim">  cwd: ~/pastuxso</text>
+  </g>
+
+  <!-- Scene 1: Hatching (0-4s of 16s cycle) -->
+  <g>
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.2188;0.25;0.9688;1" dur="16s" repeatCount="indefinite"/>
+    <text x="40" y="125" class="fg"><tspan class="accent">✻</tspan> Hatching…</text>
+    <text x="40" y="147" class="dim">  building web apps with Ruby on Rails for 10+ years</text>
+  </g>
+
+  <!-- Scene 2: Snooping (4-8s) -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2188;0.25;0.4688;0.5;1" dur="16s" repeatCount="indefinite"/>
+    <text x="40" y="125" class="fg"><tspan class="accent">✻</tspan> Snooping…</text>
+    <text x="40" y="147" class="dim">  <tspan class="accent">⚠</tspan> ./private — access by request</text>
+  </g>
+
+  <!-- Scene 3: Schmoozing (8-15s, links staggered) -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4688;0.5;0.9375;1" dur="16s" repeatCount="indefinite"/>
+    <text x="40" y="125" class="fg"><tspan class="accent">✻</tspan> Schmoozing…</text>
+    <text x="40" y="147" class="dim" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.4938;0.5125;1" dur="16s" repeatCount="indefinite"/>
+      &#160; linkedin.com/in/pastuxso
+    </text>
+    <text x="40" y="169" class="dim" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5563;0.575;1" dur="16s" repeatCount="indefinite"/>
+      &#160; x.com/pastuxso
+    </text>
+    <text x="40" y="191" class="dim" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6438;0.6563;1" dur="16s" repeatCount="indefinite"/>
+      &#160; bsky.app/profile/pastuxso.dev
+    </text>
+  </g>
+
+  <!-- Prompt with blinking cursor -->
+  <text x="40" y="235" class="fg">&gt; <tspan>▮<animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="1.1s" repeatCount="indefinite"/></tspan></text>
+</svg>
