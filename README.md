@@ -4,4 +4,4 @@
   <img src="terminal-light.svg" alt="Cristian Cepeda — Ruby on Rails Developer" width="640">
 </picture>
 
-<sub>[linkedin](https://www.linkedin.com/in/pastuxso/) · [x](https://x.com/pastuxso) · [bluesky](https://bsky.app/profile/pastuxso.dev)</sub>
+<sub>[linkedin](https://www.linkedin.com/in/pastuxso/) · [x](https://x.com/pastuxso)
